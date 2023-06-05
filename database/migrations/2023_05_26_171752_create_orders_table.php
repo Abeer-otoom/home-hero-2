@@ -22,7 +22,7 @@ class CreateOrdersTable extends Migration
             $table->time('hour');
             $table->text('desc');
             $table->string('image');
-            $table->tinyInteger('status')->default('0');
+            $table->foreignId('orders_status_id')->nullable()->references('id')->on('orders_status');
             $table->timestamps();
         });
     }
