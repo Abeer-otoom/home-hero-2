@@ -1,0 +1,343 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+html,body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.home_bg_image{
+  background: url(https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80)no-repeat center center;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.hero-bg-image {
+    background: url(https://images.unsplash.com/photo-1595334535896-83836454339a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) no-repeat center center;
+    background-attachment: fixed;
+    height: 400px;
+}   
+.request-bg-image {
+  background: url(https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) no-repeat center center;
+  background-attachment: fixed;
+  height: 300px;
+}   
+
+
+.card {
+    display: inline-block;
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }.card {
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .edit-btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .edit-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: .5s ease;
+  }
+  
+  .edit-btn:hover {
+    color: #1e1e2b;
+    transition-delay: .5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .edit-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  .edit-btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+  .box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(238, 255, 1, 0.959);
+  }
+  
+  .box:hover:before {
+    border-color: rgba(238, 255, 1, 0.959);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: rgba(238, 255, 1, 0.959);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #ffc73a;
+  }
+  
+  .rating input {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating svg {
+    width: 3rem;
+    height: 3rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+    from {
+      stroke-dashoffset: 24;
+    }
+  }
+  
+  .rating label:hover svg {
+    stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+    0% {
+      transform: scale(1);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30% {
+      transform: scale(0);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30.1% {
+      stroke: var(--fill);
+      stroke-dasharray: 0;
+      stroke-linejoin: miter;
+      stroke-width: 8px;
+    }
+  
+    60% {
+      transform: scale(1.2);
+      fill: var(--fill);
+    }
+  }
+  

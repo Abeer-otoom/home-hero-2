@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),url(homelounge.jpg));
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+ height: 12%;
+ display: flex;
+ align-items: center;
+
+
+
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-icon{
+
+width: 30px;
+cursor: pointer;
+padding: auto;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+flex-basis: 70px;
+
+}
+h1{
+    color: #fff;
+    font-size: 80px;
+
+}
+p{
+    color: #fff;
+    font-size: 11px;
+}
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: .5s ease;
+  }
+  
+  .btn:hover {
+    color: #1e1e2b;
+    transition-delay: .5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+  
+  body{
+    background-color: #f7d200;
+    color: #fff;
+
+  }
+  
+.container1{
+    display: flex;
+    width: 90%;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+  .card {
+    cursor: pointer;
+    width: 190px;
+    height: 254px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, .2);
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+   }
+   h3{
+    min-height: 20vh;
+    color: black;
+    font-size: medium;
+   }
+   .card-bg{
+    width: 190px;
+    height: 254px;
+    border-radius: 1px;
+    background-position: center;
+    background-size: cover;
+
+}
+.card-categories{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+.card-heading{
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+   
+   .card:hover {
+    box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+   }
