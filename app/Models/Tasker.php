@@ -9,19 +9,22 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\Review;
 use App\Models\category;
 
-use Illuminate\Contracts\Auth\Authenticatable;
-class Tasker extends Model implements Authenticatable
+// use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class Tasker extends Authenticatable
 {
     use HasFactory;
-    
+
     protected $table='taskers';
     protected $fillable=['name','email','password','image','phone_number','bio','location','category_id','status','rstatus'];
+    protected $guard='tasker';
 
     protected $hidden=['password'];
 
     public function category(){
         $this->belongsTo(category::class);
-    
+
     }
 
     public function order(){
@@ -33,7 +36,7 @@ class Tasker extends Model implements Authenticatable
     {
         return $this->hasMany(Review::class);
     }
-    
+
     public function getAuthIdentifierName()
     {
         return 'id';

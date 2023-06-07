@@ -40,7 +40,7 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-  
+
 
         'api' => [
             'driver' => 'token',
@@ -53,7 +53,7 @@ return [
             'driver' => 'session',
             'provider' => 'taskers',
         ],
-    
+
     ],
 
     /*
@@ -78,7 +78,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        
+
         'taskers' => [
             'driver' => 'eloquent',
             'model' => App\Models\Tasker::class,

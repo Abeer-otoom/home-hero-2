@@ -33,7 +33,8 @@ Route::get('/',[PagesController::class,'index']);
 Route::get('category/{{name}}',[PagesController::class,'Category']);
 
 Route::get('tasker/login', 'App\Http\Controllers\TaskerAuthController@showLoginForm')->name('tasker.login');
-Route::post('tasker/login', 'App\Http\Controllers\TaskerAuthController@login')->name('tasker.login.submit');
+// Route::post('/tasker/submit', 'App\Http\Controllers\TaskerAuthController@login')->name('tasker.login.submit');
+Route::get('/tasker/submit',[App\Http\Controllers\TaskerAuthController::class,'login'])->name('tasker.submit');
 
 Route::resource('/tasker',TaskersController::class);
 
